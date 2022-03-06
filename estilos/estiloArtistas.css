@@ -1,0 +1,120 @@
+@font-face{
+    src: url("../fonts/Circularstd.ttf");
+    font-family: CircularSTD;
+}
+
+body{
+    background-color: rgb(61, 61, 61);
+    font-family: CircularSTD;
+    margin:0;
+}
+.pArticle{
+    width:99%;
+    height:20%;
+    font-size: 1.5em;
+    padding:1em;
+}
+section{
+    padding:4em;
+    padding-left:10em;
+    display:flex;
+    flex-direction: column;
+}
+h1{
+    color:white;
+    margin-right:0;
+    padding-bottom:2em;
+}
+h2{
+    color:white;
+    font-size: 2em;
+    padding-right:2em;
+    width:3em;
+}
+.h1index, .h1play, .h1artistas, .h1podcasts {
+
+    text-align: center;
+    margin:auto;
+    position:relative;
+    font-size:5em;
+  
+}
+.leftsec, .rightsec{
+      width:99%;
+      color:white;
+      display:flex;
+      flex-direction: row;
+      margin-left:4em;
+      text-align: justify;
+      padding-left:0.5em;
+}
+article{
+    height:20em;
+    padding-bottom:5em;
+}
+img{
+    width:200px;
+    height:200px;
+    border-radius: 100%;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+@media (min-width:320px) and (max-width:500px){ 
+   
+    body{
+        font-size: 0.5em;
+    }
+    .pArticle{
+        height:5em;
+        font-size: 1.3em;
+        width:100%;
+    }
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    h1{
+        padding-right:5em;
+        width:100%;
+    }
+}
+
+@media (min-width:500px) and (max-width:961px)  { 
+    /*Tablets*/
+    body{
+        font-size: 0.5em;
+    }
+    img{
+        width: 100px;
+        height:100px;
+    }
+    .pArticle{
+        height:5em;
+        font-size:1.3em;
+        width:100%;
+    }
+    h1{
+        padding-right:5em;
+        width:100%;
+    }
+   
+}
+
+

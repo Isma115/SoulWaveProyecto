@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="estilos/estiloPlaylists.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src = "js/script.js"></script>
+    <title>SoulWave - Playlists</title>
+</head>
+<body>
+<h1 class = "h1play">Nuestras playlists</h1>
+<div class = "contenido">
+    <aside>
+        
+        <nav class = "navplay">
+            <ul>
+                <li class = "eleplay"><a href = "index.html" class = "home"><img src = "images/botonHome.png" alt = "icono home"></a></li>
+                <li class = "eleplay"><a href = "podcasts.html"><img src = "images/podcastIcono.png" alt = "icono podcast"></a></li>
+                <li class = "eleplay"><a href = "sobreNosotros.html"><img src = "images/about.png" alt = "icono sobre nosotros"></a></li>
+                <li class = "eleplay"><a href = "iniciarSesion.html"><img src = "images/defaultProfile.jpg" alt = "icono sobre nosotros"></a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <main>
+        <div class = "disportada">
+            <img src = "images/electro.jpg" alt = "icono electro" class = "icono">
+            <a href="javascript:void(0)" onclick = "setPlayList('electro');" class = "boton"></a>
+            <p class = "parrafoport">Electrónica</p>
+        </div> 
+        <div class = "disportada">
+            <img src = "images/rock.jpg" alt = "icono rock" class = "icono">
+            <a href="javascript:void(0)" onclick = "setPlayList('rock');" class = "boton"></a>
+            <p class = "parrafoport">Rock</p>
+        </div>
+        <div class = "disportada">
+            <img src = "images/latino.jpg" alt = "icono latino" class = "icono">
+            <a href="javascript:void(0)" onclick = "setPlayList('lat');" class = "boton"></a>
+            <p class = "parrafoport">Latino</p>
+        </div>
+        <div class = "disportada">
+            <img src = "images/trap.jpg" alt = "icono trap" class = "icono">
+            <a href="javascript:void(0)" onclick = "setPlayList('trap');" class = "boton"></a>
+            <p class = "parrafoport">Trap</p>
+        </div>
+        <div class = "disportada">
+            <img src = "images/dubstep.jpg" alt = "icono dubstep" class = "icono">
+            <a href="javascript:void(0)" onclick = "setPlayList('dubstep');" class = "boton"></a>
+            <p class = "parrafoport">Dubstep</p>
+        </div>
+        
+        <div class = "displaylist" id = "displaylistid">
+            <div class = "botonAtras">
+                <a href="javascript:void(0)" id = "botonAtras" onclick = "hidePlayList()">Atrás</a>
+            </div>
+            
+            <div>
+                <iframe class = "play" width="1500" height="450" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class = "parrafo"></p>
+                <div class="corazon" onclick = "like(0);"><img class = "cori" src = "images/heart.png" alt = "icono like"></div>
+            </div>
+
+            <div>
+                <iframe class = "play" width="1500" height="450" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class = "parrafo"></p>
+                <div class="corazon" onclick = "like(1);"><img class = "cori" src = "images/heart.png" alt = "icono like"></div>
+            </div>
+            
+            <div>
+                <iframe class = "play" width="1500" height="450" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class = "parrafo"></p>
+                <div class="corazon" onclick = "like(2);"><img class = "cori" src = "images/heart.png" alt = "icono like"></div>
+            </div>
+
+            <div>
+                <iframe class = "play" width="1500" height="450" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p class = "parrafo"></p>
+                <div class="corazon" onclick = "like(3);"><img class = "cori" src = "images/heart.png" alt = "icono like"></div>
+            </div>
+        </div>
+
+
+    </main>
+    
+
+    
+</div>
+    
+</body>
+</html>
