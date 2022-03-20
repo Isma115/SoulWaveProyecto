@@ -7,11 +7,12 @@ body{
     background-color: rgb(61, 61, 61);
     font-family: CircularSTD;
     margin:0;
+    padding-right:5em;
 }
 .pArticle{
     width:99%;
     height:20%;
-    font-size: 1.5em;
+    font-size: 2em;
     padding:1em;
 }
 section{
@@ -51,6 +52,7 @@ h2{
 article{
     height:20em;
     padding-bottom:5em;
+    margin-bottom:10em;
 }
 img{
     width:200px;
@@ -79,11 +81,12 @@ img{
 @media (min-width:320px) and (max-width:500px){ 
    
     body{
-        font-size: 0.5em;
+        font-size: 1em;
+        padding-right:10em;
     }
     .pArticle{
         height:5em;
-        font-size: 1.3em;
+        font-size: 1em;
         width:100%;
     }
     img{
@@ -94,12 +97,16 @@ img{
         padding-right:5em;
         width:100%;
     }
+    article{
+        margin-bottom:20em;
+    }
 }
 
 @media (min-width:500px) and (max-width:961px)  { 
     /*Tablets*/
     body{
-        font-size: 0.5em;
+        font-size: 1em;
+        padding-right:10em;
     }
     img{
         width: 100px;
@@ -107,12 +114,15 @@ img{
     }
     .pArticle{
         height:5em;
-        font-size:1.3em;
+        font-size:1em;
         width:100%;
     }
     h1{
         padding-right:5em;
         width:100%;
+    }
+    article{
+        margin-bottom:20em;
     }
    
 }

@@ -10,37 +10,41 @@
 
 
 
-html, body{
+body, html{
     height: 100%;
+    width:100%;
     background-size:cover;
 }
 .bodyindex{
-    background-image: url("../images/multitud.jpg");
+    background-image: url("../images/multitud.webp");
     background-position: bottom;
     background-repeat: no-repeat;
 }
 body{
-  background-color: rgb(78, 78, 78);
+  background-color: rgb(0,0,0);
     margin:0;
     font-family: CircularSTD;
 }
 h2{
   color:white;
-  display:flex;
-  flex-direction: row;
   margin-bottom: 0;
-  margin-top: 0.3em;
-  margin-right:2em;
+  margin-right:1.5em;
+  display: flex;
+  flex-direction: row;
 
+}
+.titulo{
+    color:white;
+    font-size:2em;
 }
 h2 img{ 
   width:100px;
   height:71px;
 }
-h2 span{
+h2 p{
   margin-right:1em;
   margin-left:1em;
-  margin-top: 0.8em;
+  margin-bottom:30px;
   font-size: 1.1em;
   
 }
@@ -64,7 +68,6 @@ article{
 
 .homeNav{
     display:flex;
-    justify-content: center;
     background-color: black;
 
 }
@@ -72,8 +75,9 @@ article{
     height:100%;
     position:relative;
 }
-ul{
-    list-style-type: none;
+.homeNav ul{
+    display:flex;
+    margin-top:2.3em;
     
 }
 header{
@@ -183,12 +187,14 @@ li a:hover {
     .h1index{
         font-size:1em;
     }
-    .ele{
-        font-size: 0.5em;
-    }
+    
     .botonEscuchar{
         font-size:1em;
     }
+    li a{
+        padding-bottom:1en;
+    }
+    
 }
 
 
@@ -395,9 +401,17 @@ li a:hover {
     font-weight:600
   }
   h2{
-    font-size: 1em;
+    font-size: 1.3em;
     display:flex;
     flex-direction: column;
+  }
+  .h1index{
+    font-size: 2.5em;
+  }
+  .ele{
+      font-size:0.5em;
+      height:2em;
+      margin-bottom: 5em;
   }
   .articleAbout img{
     width:300px;
@@ -406,17 +420,31 @@ li a:hover {
   .articleAbout{
     font-size:medium;
   }
+  ul{
+    flex-direction: column;
+    font-size: 1.5em;
+  }
+
+  .botonEscuchar{
+    font-size: 1.5em;
+  }
+  .ele a{
+      height:2em;
+      width:3em;
+  }
 }
 @media (min-width:641px) and (max-width:961px)  { 
   /*Tablets*/
   .h1index{
-      font-size: 3em;
+      font-size: 4em;
   }
+ 
   .ele{
-      font-size: 0.8em;
+      font-size: 0.6em;
+      margin-bottom: 2em;
   }
   .botonEscuchar{
-      font-size:1.5em;
+      font-size:2em;
   }
   .site-footer [class^=col-]
   {
@@ -428,6 +456,10 @@ li a:hover {
   .articleAbout img{
     width:300px;
     height:200px;
+  }
+  ul{
+    flex-direction: column;
+    font-size: 1.5em;
   }
 }
 

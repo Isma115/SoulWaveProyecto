@@ -26,11 +26,11 @@ body{
     color:white;
     background-color: black;
 }
-ul{
+.navplay ul{
     position:relative;
     height:100%;
     background-color: black;
-    top:25%;
+    top:15%;
 }
 .eleplay{
     align-items: center;
